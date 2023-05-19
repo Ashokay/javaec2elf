@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -fno-common -I"../src" -I"../src/config/SCTV1" -Werror -Wall   -DXPRJ_SCTV1=$(CND_CONF)    $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  C:\work\firmware\bootloader_RD\SCTV1\firmware\src\config\SCTV1\peripheral\clk\plib_clk.c
