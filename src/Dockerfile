@@ -18,6 +18,8 @@ VOLUME /home/ubuntu/harshal:/
 
 # Install any additional dependencies required by your project
 RUN make
+RUN objcopy -O ihex myprogram.elf myprogram.hex
+RUN objcopy -O ihex -I binary myprogram.hex myprogram.bin
 
 # Expose any necessary ports
 #EXPOSE 5050
