@@ -20,7 +20,7 @@ VOLUME /home/ubuntu/harshal:/
 RUN make
 
 # Expose any necessary ports
-EXPOSE 5050
+#EXPOSE 5050
 
 # Define the command to run when the container starts
 #CMD ["make","Makefile"]
