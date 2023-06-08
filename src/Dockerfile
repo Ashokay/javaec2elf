@@ -11,7 +11,7 @@ COPY . /app
 WORKDIR /app
 
 # Mount the XC32 compiler directory from the server into the container
-VOLUME /home/ubuntu/harshal:/
+#VOLUME /home/ubuntu/harshal:/
 
 # Add the XC32 compiler to the system's PATH
 #ENV PATH="/opt/microchip/xc32/v2.50/bin:${PATH}"
@@ -22,7 +22,7 @@ RUN objcopy -O ihex myprogram.elf myprogram.hex
 RUN objcopy -O ihex -I binary myprogram.hex myprogram.bin
 
 # Expose any necessary ports
-EXPOSE 5050
+#EXPOSE 5050
 
 # Define the command to run when the container starts
-CMD ["make","Makefile"]
+#CMD ["make","Makefile"]
